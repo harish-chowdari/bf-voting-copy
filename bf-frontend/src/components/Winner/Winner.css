@@ -1,0 +1,100 @@
+.winner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .winner-data {
+    text-align: center;
+  }
+  
+  .get-winner-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .get-winner-button:hover {
+    background-color: #45a049;
+  }
+  
+  
+
+
+
+  @media screen and (max-width:768px) {
+
+    .get-winner-button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+    
+    .get-winner-button:hover {
+      background-color: #45a049;
+    }
+ 
+    
+    .pop-content {
+      background-color: #f9f9f9;
+      padding: 12px;
+      padding-top: 0px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      text-align: center;
+    }
+    
+    .pop-content p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    .pop-content button {
+      padding: 4px 10px;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    
+    .pop-content button:hover {
+      background-color: #0056b3;
+    }
+    
+  
+  }
+
+
+
+  @media screen and (max-width:500px) {
+
+    
+  .get-winner-button {
+    padding: 2px 10px;
+    font-size: 15px;
+  }
+
+  .pop-content {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .pop-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  
+  .pop-content button {
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+
+  }
+  

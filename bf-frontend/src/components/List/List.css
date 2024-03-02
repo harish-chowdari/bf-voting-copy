@@ -1,0 +1,345 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    animation: slideLeft 0.66s ease-in-out;
+}
+
+.vote-title{
+    align-items: center;
+    width: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: sticky;
+    top: 62px;
+    padding-bottom: 10px;
+    background-color: #d8f3bf;
+
+    
+}
+
+
+.timup-title{
+    color: red;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0px 70px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+
+}
+
+.vote-bf{
+    font-size: 23px;
+    font-weight: 500;
+    margin: 5px 40px;
+}
+
+
+.list-items {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+ 
+.list-items-list{
+    list-style-type: none;
+    padding: 0px; 
+    margin: 0px;
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.item-in-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    background-color: white;
+}
+
+.item-in-list:hover {
+    transform: translateY(-5px);
+}
+
+.list-itemName{
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    width: 177px;
+}
+
+.list-img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 180px;
+    height: 110px;
+    margin: 0px;
+    background-color: #9aec7a;
+}
+
+
+.list-title{
+    margin: 0px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.vote-button{
+    width: 180px;
+    font-size: 18px;
+    margin-top: 0px;
+    border: none;
+    height: 28px;
+    cursor: pointer;
+    border-top: 2px solid white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .vote-title{
+        align-items: center;
+        padding: 0px;
+        padding-bottom: 3px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        position: sticky;
+        top: 35px;
+    
+        
+    }
+    
+    
+    .timup-title{
+        color: red;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px 30px;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    
+    }
+    
+    .vote-bf{
+        font-size: 15px;
+        font-weight: 500;
+        margin: 5px 30px;
+        
+    }
+    
+    .item-in-list{
+        border-radius: 10px;
+        margin: 10px;
+        align-items: center;
+        box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        background-color: white;
+        width: 20%;
+    }
+    
+    
+    .list-itemName{
+        margin: 0px;
+        margin-bottom: 7px;
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .list-img{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        width: 100%;
+        height: 67%;
+    }
+    
+    
+    .vote-button{
+        width: 100%;
+        font-size: 15px;
+        border: none;
+        height: 22px;
+        border-top: 2px solid white;
+    }
+    
+    .popup {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        z-index: 9999;
+      }
+      
+      .popup-content {
+        text-align: center;
+        font-size: 14px;
+      }
+      
+      .popup button {
+        border: none;
+        font-size: 13px;
+        padding: 3px 10px;
+        padding-right: 11px;
+        margin-bottom: 3px;
+        cursor: pointer;
+      }
+    
+      
+.list-popup{
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    border-radius: 7px;
+    gap: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    width: 55%;
+    height: 40%;
+}
+
+
+.list-popup-img{
+    width: 100%;
+    height: 80%;
+}
+
+.list-popup button{
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+}
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .timup-title{
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px 10px;
+        margin-top: 5px;
+    
+    }
+
+    .vote-title{
+        width: auto;
+        font-size: 12px;  
+        position: sticky;
+        top: 32px;
+        width: auto;
+        margin: 0px 10px;
+        padding: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+    }
+    
+    .vote-title h2{
+        font-size: 12px;
+    }
+    .vote-bf{
+        font-size: 12px;
+        font-weight: 500;
+        margin: 5px 5px;
+
+    }
+
+    .list-title{
+        font-size: 15px;
+    }
+
+    
+    .list-items-list {
+        margin-bottom: 15px;
+     }
+ 
+    .list-itemName {
+        font-size: 12px;
+        font-weight: 650;
+        margin-bottom: 4px;
+        margin-top: 0px;
+     }
+
+     .item-in-list{
+        width: 25%;
+        margin: 8px 8px;         
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+     }
+
+     .item-in-list:hover {
+        transform: none;
+    }
+ 
+     .list-img{
+         width: 100%;
+         height: 70%;
+     }
+
+    .vote-button{
+        width: 100%;
+        font-size: 13px;
+        height: 24px;
+        border-top: 2px solid white;
+    }
+
+    .popup {
+        padding: 7px;
+        padding-top: 0px;
+        margin: 0px;
+      }
+      
+      .popup-content {
+        text-align: center;
+        font-size: 13px;
+        
+        padding: 0px;
+      }
+      
+      .popup button {
+        margin-top: 0px;
+        padding: 2px 6px;
+        font-size: 14px;
+        
+      }
+
+      .list-popup{
+        padding: 5px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+        border-radius: 5px;
+        gap: 10px;
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        width: 55%;
+        height: 30%;
+    }
+    
+    
+    .list-popup-img{
+        width: 100%;
+        height: 75%;
+    }
+    
+    .list-popup button{
+        padding: 4px 8px;
+        font-size: 12px;
+        border: none;
+    }
+    
+    
+}
