@@ -75,7 +75,7 @@ const List = () => {
       const currentHour = currentTime.getHours()
       const currentMinutes = currentTime.getMinutes()
 
-      if (currentHour === 15 && currentMinutes <= 59) 
+      if (currentHour === 14 && currentMinutes <= 59) 
       {
         setEnable(true)
       } 

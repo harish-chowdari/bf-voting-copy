@@ -27,8 +27,9 @@ const Login = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:2008/login', loginDetails);
-
+      const res = await axios.post('https://bf-be.onrender.com/login', loginDetails);
+      const get = await axios.get("https://bf-be.onrender.com/userdetails")
+      console.log(get.data)
       if(res.data.success) 
       {
         localStorage.setItem('auth-token', res.data.token);
